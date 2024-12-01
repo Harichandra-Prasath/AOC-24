@@ -2,4 +2,4 @@ run: build
 	@bin/aoc-24
 
 build:
-	@go run -o bin/aoc-24
+	@go build -o bin/aoc-24
