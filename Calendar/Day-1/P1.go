@@ -2,14 +2,15 @@ package day1
 
 import (
 	"container/heap"
-	"os"
 	"strconv"
 	"strings"
+
+	calendar "github.com/Harichandra-Prasath/AOC-24/Calendar"
 )
 
 func P1_Solve() int {
 
-	data, _ := os.ReadFile("Calendar/Day-1/input.txt")
+	data := calendar.Extract(INPUT_PATH)
 
 	heap1 := &minHeap{}
 	heap2 := &minHeap{}
@@ -18,7 +19,7 @@ func P1_Solve() int {
 	heap.Init(heap2)
 
 	// Traverse each line
-	for _, line := range strings.Split(string(data), "\n") {
+	for _, line := range strings.Split(data, "\n") {
 
 		ids := strings.Split(line, "   ")
 

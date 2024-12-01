@@ -1,5 +1,7 @@
 package day1
 
+const INPUT_PATH = `Calendar/Day-1/input.txt`
+
 // An minHeap is a min-heap of ints.
 type minHeap []int
 
